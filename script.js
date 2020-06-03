@@ -196,5 +196,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-module.exports = { pickRandomWord, lettersGuessedCorrect, updateTriesDisplay, updateInputArray, loseTheGame, winTheGame, }
+module.exports = {pickRandomWord, lettersGuessedCorrect, updateTriesDisplay, updateInputArray, loseTheGame, winTheGame}
 
