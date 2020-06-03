@@ -1,0 +1,235 @@
+
+body{
+  font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+  
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0px;
+  text-align: center;
+  background-color: rgb(122, 164, 163);
+  margin: 0px;
+  padding: 0px;
+  line-height: 0px;
+}
+
+
+.header{
+  grid-column: 2/6;
+  grid-row: 1/2;
+  padding-top: 80px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.header p {
+  color: rgb(0, 70, 66);
+  padding: 20px 0px;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+button{
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90px;
+  height: 27px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 5px;
+  background-color: rgb(188, 230, 230);
+  border-radius: 5px;
+  transition: all 0.3s;
+  padding: 0px;
+}
+
+button:hover{
+  border: 2px solid rgb(0, 70, 66);
+  background-color: rgb(155, 203, 203);
+}
+
+button:focus{
+  outline: none;
+}
+
+button:active{
+font-weight: 900;
+background-color: rgb(126, 172, 172);
+}
+
+.input{
+  padding: 40px 0px;
+}
+
+.letterinput{
+  width: 90px;
+  height: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;;
+  background-color: rgb(188, 230, 230);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.letterinput:focus{
+  border: 2px solid rgb(0, 70, 66);;
+  outline: none;
+  width: 86px;
+  height: 21px;
+}
+
+.maincontent{
+  grid-column: 2/6;
+  grid-row: 2/4;
+}
+
+.current{
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-size: 16px;;
+}
+
+.the_word{
+  color: rgb(0, 70, 66);
+  font-family: 'Special Elite', cursive;
+  color: #037138;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.guessed_letters{
+  font-family: 'Special Elite', cursive;
+  color: #8b0000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.maincontent h3{
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.lives{
+  color: rgb(0, 70, 66);
+  padding-top: 20px;
+}
+
+#modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #0000007e;
+}
+
+.modal_content{
+  margin: 15% auto;
+  padding: 20px;
+  width: 340px;
+}
+
+.close{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.lose {
+  display: none;
+}
+
+.win{
+  display: none;
+}
+
+
+.win, .lose{
+  color: rgb(218, 218, 218);
+  text-shadow: 0px 2px 3px rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+#modal img{
+  width: 300px;
+  box-shadow: 0px 3px 13px -3px rgba(0,0,0,0.75);
+}
+
+.drawing{
+  box-shadow: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 10px;
+}
+
+.drawing img{
+  width: 100px;
+}
+
+
+@media screen and (max-width : 720px){
+
+.container{
+  display: grid;
+  flex-direction: column;
+}
+
+.header{
+    grid-column: 2/6;
+    grid-row: 1/2;
+    padding-top: 80px;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  
+.header p {
+    color: rgb(0, 70, 66);
+    padding: 20px 0px;
+    font-size: 9px;
+  }
+
+button{
+    display: block;
+    margin: 0.4em auto;
+  }
+
+.maincontent h3 {
+  font-size: 12px;
+}
+
+.current{
+  font-size: 12px;
+}
+
+.lives{
+ font-size: 12px;
+}
+
+.the_word{
+  font-size: 22px;
+}
+
+.guessed_letters{
+  font-size: 22px;
+}
+
+}

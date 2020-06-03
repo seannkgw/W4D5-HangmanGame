@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Hangman</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body class="container">
+  <header class="header">
+    <h1>The 'Hangman' Game</h1>
+    <p>[no people will actually be harmed during this game]</p>
+  </header>
+
+  <content class="maincontent">
+    <div class="input">
+      <input class="letterinput" type="text" placeholder="Guess a letter" maxlength="1" />
+      <button class="guess">Guess</button>
+      <button class="restart">Restart</button>
+    </div>
+    <h2 class="current">Current word:</h2>
+    <div class="the_word">_ _ _ _ _</div>
+    <h3>Incorrect letters:</h3>
+    <div class="guessed_letters"></div>
+    <p class="lives">You have <span></span> lives remaining</p>
+    <div class="drawing">
+
+    </div>
+  </content>
+
+  <footer id="modal">
+    <div class="modal_content">
+      <span class="close">&times;</span>
+      <div class="win">
+        <h2>You won!</h2>
+        <img src="images/win.gif" />
+      </div>
+
+      <div class="lose">
+        <h2>You lost..</h2>
+        <img src="images/lose.gif" />
+        <p>The chosen word was: <span></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script defer type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
